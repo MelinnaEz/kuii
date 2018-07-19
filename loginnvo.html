@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sign in</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body class="text-center"> 
+
+    <div class="container" >
+
+    <div class="row">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Formulario de login -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form class="form-signin"> <!-- Hacer submit al backend por metodo tradicional: action="http://www.api.kuii.com/user/login" method="POST" -->
+                    <img class="mb-4" src="img/me.jpg" alt="" width="72" height="72">
+                    <h1 class="h3 mb-3 font-weight-normal">Sign in into your kuii account</h1>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+            </div>
+
+            <!-- Formulario para registrse -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form class="form-signin"> <!-- Hacer submit al backend por metodo tradicional: action="http://www.api.kuii.com/user/login" method="POST" -->
+                    <img class="mb-4" src="img/melikuii.jpeg" alt="" width="72" height="72">
+                    <h1 class="h3 mb-3 font-weight-normal">Sign Up to Kuii Wallet!</h1>
+
+                    <label for="inputEmail" class="sr-only">First Name</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="First Name" required autofocus>
+
+                    <label for="inputEmail" class="sr-only">Last Name</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="Last Name" required autofocus>
+
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                    <label for="inputEmail" class="sr-only">Gender</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option disabled>Gender</option>
+                        <option value="f">Female</option>
+                        <option value="m">Male</option>
+                    </select>
+                    <br /><br />
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+  
+    <br />
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </div>    
+</body>
+</html>
